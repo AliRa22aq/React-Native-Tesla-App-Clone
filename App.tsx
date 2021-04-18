@@ -2,17 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import CarItem from './components/CarItem'
+import CarList from './components/CarList'
 
 export default function App() {
   return (
     <View style={styles.container}>
-     <CarItem 
-      name={"Model X"} 
-      tagline={"Order online for"} 
-      taglineCTA= {"Touchless Delivery"}
-      image={require('./assets/images/Model3.jpeg')}
-      />
-      
+      <CarList />
      <StatusBar style="auto" />
     </View>
   );
@@ -20,10 +15,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // flex: 1,
+    // backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
  
 });
